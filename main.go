@@ -14,7 +14,6 @@ func main() {
 
 	db, err := sql.Open("postgres", "host=localhost port=5432 user=postgres dbname=go_test sslmode=disable")
 	if err != nil {
-		fmt.Println("Here")
 		panic(err)
 	}
 
