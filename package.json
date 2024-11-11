@@ -1,0 +1,8 @@
+{
+	"scripts": {
+		"generate": "jet -dsn=\"postgresql://postgres@localhost:5432/go_test?sslmode=disable\" -path=./.gen -ignore-tables=_prisma_migrations"
+	},
+	"devDependencies": {
+		"prisma": "^5.22.0"
+	}
+}
