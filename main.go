@@ -22,14 +22,10 @@ func main() {
 	stmt := SELECT(
 		Post.ID,
 		Post.Title,
-		// Author.Name,
 	).FROM(Post)
 
 	var posts []model.Post
 
-	// Author struct {
-	// 	model.Author
-	// }
 	err = stmt.Query(db, &posts)
 	if err != nil {
 		fmt.Println(err)
